@@ -35,6 +35,11 @@ jobs:
       - name: remove whitelist
         run: ionic cordova plugin rm cordova-plugin-whitelist
         
+      - name: androidx
+        run: |
+          cordova plugin add cordova-plugin-androidx
+          cordova plugin add cordova-plugin-androidx-adapter
+        
       - name: Build Android Dev APK
         run: ionic cordova build android
 
