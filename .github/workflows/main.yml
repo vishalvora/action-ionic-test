@@ -32,8 +32,8 @@ jobs:
       - name: Add Android platform
         run: ionic cordova platform add android@latest
         
-      - name: remove whitelist
-        run: ionic cordova plugin rm cordova-plugin-whitelist
+      #- name: remove whitelist
+        #run: ionic cordova plugin rm cordova-plugin-whitelist
         
       - name: androidx
         run: |
