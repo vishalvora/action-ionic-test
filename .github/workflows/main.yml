@@ -44,7 +44,7 @@ jobs:
         run: ionic cordova build android
 
       - name: Build Android Release APK
-        run: ionic cordova build android --release --prod
+        run: ionic cordova build android --prod --release -- -- --packageType=bundle
 
       - name: Generate the Android App Bundle
         working-directory: ./platforms/android/
